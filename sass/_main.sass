@@ -184,8 +184,23 @@
 				+respond-to(tab-sm)
 					font-size: 11px
 
+.content
+	@extend %inside
+	margin: 55px auto
 
-
+.hero
+	.hero__col1
+		float: left
+		width: 47%
+		+respond-to(tab)
+			float: none
+			width: auto
+	.hero__col2
+		float: right
+		width: 52%
+		+respond-to(tab)
+			float: none
+			width: auto
 
 
 

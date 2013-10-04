@@ -23,7 +23,7 @@ ul { list-style: none; }
 
 .clearfix:after { display: block; visibility: hidden; clear: both; height: 0; content: ""; font-size: 0; line-height: 0; }
 
-.header .header__in, .footer .footer__in { position: relative; max-width: 1024px; padding: 0 20px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0 auto; }
+.header .header__in, .footer .footer__in, .content { position: relative; max-width: 1024px; padding: 0 20px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0 auto; }
 
 .push { height: 75px; }
 
@@ -64,6 +64,13 @@ ul { list-style: none; }
 .footer .footer__copyright .footer__text { overflow: hidden; line-height: 1.2; font-size: 11px; }
 .footer .footer__copyright .footer__text strong { font-size: 12px; }
 @media only screen and (max-width: 700px) { .footer .footer__copyright .footer__text strong { font-size: 11px; } }
+
+.content { margin: 55px auto; }
+
+.hero .hero__col1 { float: left; width: 47%; }
+@media only screen and (max-width: 768px) { .hero .hero__col1 { float: none; width: auto; } }
+.hero .hero__col2 { float: right; width: 52%; }
+@media only screen and (max-width: 768px) { .hero .hero__col2 { float: none; width: auto; } }
 
 .l { width: 100%; display: inline-block; }
 .l .l-col1 { float: left; width: 232px; margin-left: 11px; }
