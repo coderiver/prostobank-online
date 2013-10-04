@@ -82,13 +82,20 @@
 		+respond-to(tab)
 			margin: 0
 		+respond-to(tab-sm)
-			margin-right: 100px
+			margin: 0 100px
 			padding: 10px 0 15px
+			font-size: 17px
+			font-size: 2.5vw
 		+respond-to(mob)
-			margin-right: 0
+			margin: 0
+			font-size: 14px
+			font-size: 3.4vw
 		.header__description-title
 			font-size: 32px
 			color: #0d9a48
+			+respond-to(tab)
+				font-size: 24px
+				font-size: 5vw
 		.header__description-slogan
 			color: #0d9a48
 	.header__counter
@@ -174,6 +181,8 @@
 			font-size: 11px
 			strong
 				font-size: 12px
+				+respond-to(tab-sm)
+					font-size: 11px
 
 
 
