@@ -189,20 +189,28 @@
 	margin: 55px auto
 
 .hero
+	@extend %clr
 	.hero__col1
 		float: left
 		width: 47%
-		+respond-to(tab)
+		+respond-to(tab-sm)
 			float: none
 			width: auto
+			margin-top: 60px
 	.hero__col2
 		float: right
-		width: 52%
-		+respond-to(tab)
+		width: 51%
+		+respond-to(tab-sm)
 			float: none
 			width: auto
 
-
+	.hero__video
+		text-align: center
+		img
+			max-width: 100%
+			display: block
+		.hero__video-in
+			display: inline-block
 
 
 
