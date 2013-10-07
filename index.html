@@ -13,7 +13,7 @@
 <!-- BEGIN .out -->
 <div class="out">
 	<!-- BEGIN .header -->
-	<div class="header">
+	<header class="header">
 		<div class="header__in">
 			<h1 class="header__logo"><a href="#">Простобанк</a></h1>
 			<div class="header__description">
@@ -27,29 +27,109 @@
 				клиентов
 			</div>
 		</div>
-	</div>
+	</header>
 	<!-- END .header -->
-	<!-- BEGIN .content -->
-	<div class="content">
+	<!-- BEGIN .page -->
+	<div class="page">
 		<!-- BEGIN .hero -->
 		<div class="hero">
-			<div class="hero__col2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, aut reiciendis sapiente quidem alias. Omnis, iste, adipisci sequi magnam aspernatur fugiat accusamus expedita maiores eligendi autem iusto minima sit error!</div>
+			<div class="hero__col2 products">
+				<nav class="products__services">
+					<ul class="products__services-list">
+						<li class="products__services-item">
+							<a href="#">
+								<div class="products__services-image"><img src="img/icons/banking.png" alt="banking"></div>
+								<div class="products__services-text">Выбрать и заказать банковскую услугу</div>
+							</a>
+						</li>
+						<li class="products__services-item">
+							<a href="#">
+								<div class="products__services-image"><img src="img/icons/insurance.png" alt="insurance"></div>
+								<div class="products__services-text">Выбрать и заказать страховую услугу</div>
+							</a>
+						</li>
+						<li class="products__services-item">
+							<a href="#">
+								<div class="products__services-image"><img src="img/icons/lawyer.png" alt="lawyer"></div>
+								<div class="products__services-text">Выбрать и заказать юридическую услугу для населения</div>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
 			<div class="hero__col1">
-				<div class="hero__video">
-					<div class="hero__video-in">
-						<img src="img/video.jpg" alt="video">
+				<div class="hero__media">
+					<div class="hero__media-in">
+						<a href="#"><img src="img/player.jpg" alt="video"></a>
 					</div>
 				</div>
 			</div>
 		</div>
 		<!-- END .hero -->
+		<!-- BEGIN .content -->
+		<div class="content">
+			<section class="trust">
+				<h2 class="title">Почему я могу доверять этому сайту?</h2>
+				<p>Сервис «Простобанк Онлайн» создан компанией «Простобанк Консалтинг», которая входит в ТОП-25 медиахолдингов Украины. Компания публикует материалы, посвящённые финансовым и правовым вопросам, на собственных сайтах: Prostobank.ua, Prostobiz.ua, Prostobankir.com.ua, Prostopravo.com.ua и Prostoblog.com.ua.</p>
+				<p>Мы ежедневно отслеживаем изменения условий <a href="#" class="link">56 банков</a> и <a href="#" class="link">126 страховых компаний</a>, предоставляя нашим клиентам актуальную и достоверную информацию.</p>
+			</section>
+			<section class="credentials">
+				<h2 class="title">Отзывы клиентов</h2>
+				<ul class="credentials__list">
+					<li class="credentials__item">
+						<div class="credentials__pic"><img src="img/photo-1.jpg" alt="photo"></div>
+						<div class="credentials__text">
+							<h3 class="credentials__name">Сергей Ватутин</h3>
+							<div class="credentials__trade">водитель в ООО «Баранкины будни»</div>
+							<p>Нашёл выгодный кредит на ремонт автомобиля. Быстро. Остался доволен. Сейчас выплачиваю маленькими платежами, стараюсь платить вперед – очень удобно.</p>
+						</div>
+					</li>
+					<li class="credentials__item">
+						<div class="credentials__pic"><img src="img/photo-2.jpg" alt="photo"></div>
+						<div class="credentials__text">
+							<h3 class="credentials__name">Светлана Рыжебокова-Модных</h3>
+							<div class="credentials__trade">дизайнер</div>
+							<p>Я учусь в институте, и параллельно подрабатываю фрилансером официально на работе не зарегистрирована. Последнее время у меня начались проблемы со зрением — не вижу денег.С помощью сервиса «Простобанк Онлайн» быстро нашла кредит и сделала операцию в офтальмологической клинике. Теперь я могу продолжать обучение в ВУЗе без ущерба для своего здоровья и смотрю в будущее не щурясь.</p>
+						</div>
+					</li>
+					<li class="credentials__item">
+						<div class="credentials__pic"><img src="img/photo-3.jpg" alt="photo"></div>
+						<div class="credentials__text">
+							<h3 class="credentials__name">Альфио Пачинский</h3>
+							<div class="credentials__trade">актёр</div>
+							<p>Снялся в блокбастере, но продюсеры зажали процент от проката. С помощью «Простобанк Онлайн» быстро нашёл расторопных адвокатов, и вот-вот получу причитающиеся мне деньги.</p>
+						</div>
+					</li>
+				</ul>
+			</section>
+			<section class="media">
+				<h2 class="title">СМИ о «Простобанк Онлайн»</h2>
+				<ul class="media__list">
+					<li><a href="#"><img src="img/media-1.jpg" alt="smi"></a></li>
+					<li><a href="#"><img src="img/media-2.jpg" alt="smi"></a></li>
+					<li><a href="#"><img src="img/media-3.jpg" alt="smi"></a></li>
+					<li><a href="#"><img src="img/media-4.jpg" alt="smi"></a></li>
+					<li><a href="#"><img src="img/media-5.jpg" alt="smi"></a></li>
+					<li><a href="#"><img src="img/media-6.jpg" alt="smi"></a></li>
+				</ul>
+			</section>
+			<section class="online">
+				<h2 class="title">«Простобанк Онлайн» в Интернете</h2>
+				<p>Для того, чтобы Вы достигли своей цели как можно быстрее, мы постоянно улучшаем «Простобанк Онлайн», делая его ещё более удобным и подключая к сотрудничеству новые банки и страховые компании.</p>
+				<p>Если Вы хотите достигать своих целей ещё проще и быстрее, причём одним из первых, следите за обновлениями на наших страницах в социальных сетях.</p>
+				<div class="online__social">
+					<img src="img/share.png" alt="social">
+				</div>
+			</section>
+		</div>
+		<!-- END .content -->
 	</div>
-	<!-- END .content -->
+	<!-- END .page -->
 	<div class="push"></div>
 </div>
 <!-- END .out -->
 <!-- BEGIN .footer -->
-<div class="footer">
+<footer class="footer">
 	<div class="footer__in">
 		<div class="footer__logo"><a href="#">Простобанк</a></div>
 		<div class="footer__counter"><a href="#"><img src="img/counter.png" alt="counter"></a></div>
@@ -61,7 +141,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+</footer>
 <!-- END .footer -->
 </body>
 </html>
