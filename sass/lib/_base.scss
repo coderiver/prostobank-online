@@ -13,6 +13,7 @@
 // $break-1: 320px;
 // $break-2: 480px;
 $break-1: 1024px;
+$break-6: 960px;
 $break-2: 768px;
 $break-3: 700px;
 $break-4: 600px;
@@ -20,6 +21,9 @@ $break-5: 568px;
 @mixin respond-to($media) {
   @if $media == land {
     @media only screen and (max-width: $break-1) { @content; }
+  }
+  @else if $media == wide {
+    @media only screen and (max-width: $break-6) { @content; }
   }
   @else if $media == tab {
     @media only screen and (max-width: $break-2) { @content; }

@@ -1,0 +1,214 @@
+<!doctype html>
+<!--[if lte IE 8]><html class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<meta name="viewport" content="width=device-width"/>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<script src="js/jquery.js"></script>
+	<script src="js/common.js"></script>
+</head>
+<body>
+<!-- BEGIN .out -->
+<div class="out">
+	<!-- BEGIN .header -->
+	<header class="header">
+		<div class="header__in">
+			<h1 class="header__logo"><a href="#">Простобанк</a></h1>
+			<div class="header__description">
+				<h3 class="header__description-title">«Простобанк Онлайн»</h3>
+				<p>Сервис заказа банковских и страховых услуг</p>
+				<p class="header__description-slogan">Просто. Безопасно. Бесплатно.</p>
+			</div>
+			<div class="header__counter">
+				С нами
+				<span class="header__counter-number">15 907</span>
+				клиентов
+			</div>
+		</div>
+	</header>
+	<!-- END .header -->
+	<!-- BEGIN .page -->
+	<div class="page layout">
+		<!-- BEGIN .l-main -->
+		<div class="steps l-main">
+			<div class="steps__heading">
+				<h2 class="title">Заказать кредитную карту</h2>
+				<p>Просто. Безопасно. Бесплатно.</p>
+			</div>
+			<ul class="stepes__nav">
+				<li class="is-active">
+					<h3 class="stepes__nav-title">Шаг 1</h3>
+					<p>Заполните заявку</p>
+				</li>
+				<li>
+					<h3 class="stepes__nav-title">Шаг 2</h3>
+					<p>Выберите банки и отправьте заявку</p>
+				</li>
+			</ul>
+			<div class="steps__content">
+				<div class="info-warning info-warning_error">
+					<i><img src="img/icons/info-error.png" alt="info"></i>
+					Для того, чтобы перейти к следующему шагу, введите или исправьте информацию в подсвеченных полях.
+				</div>
+				<section>
+					<h2 class="title">Информация о кредитной карте</h2>
+					<fieldset class="error">
+						<label>Необходимая Вам сумма кредита, грн</label>
+						<input type="text" class="input">
+						<span class="help-inline">Введите данные, пожалуйста</span>
+						<span class="help-block">Округлите сумму до гривен</span>
+					</fieldset>
+					<fieldset>
+						<label>Ваш город проживания</label>
+						<input type="text" class="input" value="Киев">
+					</fieldset>
+				</section>
+				<section>
+					<h2 class="title">Информация о заемщике</h2>
+					<div class="info-warning">
+						<i><img src="img/icons/info.png" alt="info"></i>
+						Помните, что указанные данные проверяются. Чем точнее Вы укажете информацию, тем меньше потратите времени на поиск и заказ кредитной карты, подходящей именно Вам!
+					</div>
+					<fieldset>
+						<label>Ваш год рождения</label>
+						<div class="select js-select">
+							<span>Выберите<i></i></span>
+							<ul>
+								<li>1989</li>
+								<li>1990</li>
+								<li>1991</li>
+								<li>1992</li>
+								<li>1993</li>
+								<li>1994</li>
+								<li>1995</li>
+							</ul>
+						</div>
+					</fieldset>
+					<fieldset class="error">
+						<label>У вас есть поручитель?</label>
+						<label class="radiobox">
+							<input type="radio" name="option1" value="yes"><i></i> да
+						</label>
+						<label class="radiobox">
+							<input type="radio" name="option1" value="no"><i></i> нет
+						</label>
+						<span class="help-inline">Введите данные, пожалуйста</span>
+					</fieldset>
+					<fieldset>
+						<label>У Вас были просрочки по кредитам?</label>
+						<label class="radiobox">
+							<input type="radio" name="option2" value="yes"><i></i> да
+						</label>
+						<label class="radiobox">
+							<input type="radio" name="option2" value="no" checked><i></i> нет
+						</label>
+					</fieldset>
+					<fieldset>
+						<label>Вы официально трудоустроены?</label>
+						<label class="radiobox">
+							<input type="radio" name="option3" value="yes" checked><i></i> да
+						</label>
+						<label class="radiobox">
+							<input type="radio" name="option3" value="no"><i></i> нет
+						</label>
+					</fieldset>
+					<fieldset>
+						<label>Вы сможете предоставить справку о доходах?</label>
+						<label class="radiobox">
+							<input type="radio" name="option4" value="yes" checked><i></i> да
+						</label>
+						<label class="radiobox">
+							<input type="radio" name="option4" value="no"><i></i> нет
+						</label>
+					</fieldset>
+					<fieldset>
+						<label>У Вас есть кредитка Приватбанка?</label>
+						<label class="radiobox">
+							<input type="radio" name="option5" value="yes"><i></i> да
+						</label>
+						<label class="radiobox">
+							<input type="radio" name="option5" value="no" checked><i></i> нет
+						</label>
+					</fieldset>
+					<fieldset>
+						<label>Укажите банк или банки, где у Вас оформлены кредиты или кредитные карты (необязательно)</label>
+						<input type="text" class="input">
+					</fieldset>
+					<fieldset>
+						<label>Ваш ежемесячный доход, подвержденный справкой о доходах</label>
+						<input type="text" class="input" value="5000">
+						<span class="help-block">Округлите сумму до гривен</span>
+					</fieldset>
+					<fieldset>
+						<label>Ваш неофициальный дополнительный ежемесячный доход</label>
+						<input type="text" class="input" value="2000">
+						<span class="help-block">Округлите сумму до гривен</span>
+					</fieldset>
+					<fieldset class="error">
+						<label>Сколько времени Вы работаете на последнем месте работы?</label>
+						<div class="select js-select">
+							<span>Выберите<i></i></span>
+							<ul>
+								<li>Менее года</li>
+								<li>Более года</li>
+								<li>От года до двух лет</li>
+								<li>От двух до пяти лет</li>
+								<li>От пяти до десяти лет</li>
+							</ul>
+						</div>
+						<span class="help-inline">Категорически запрещается оставлять это поле незаполненным. Иначе не видать Вам кредитной карты, как своих ушей.</span>
+					</fieldset>
+				</section>
+				<div class="info-warning info-warning_error">
+					<i><img src="img/icons/info-error.png" alt="info"></i>
+					Для того, чтобы перейти к следующему шагу, введите или исправьте информацию в подсвеченных полях.
+				</div>
+				<button class="button">Продолжить</button>
+			</div>
+		</div>
+		<!-- END .l-main -->
+		<!-- BEGIN .l-sidebar -->
+		<aside class="sidebar l-sidebar">
+			<div class="sidebar__pic"><img src="img/pic-1.jpg" alt="pic"></div>
+			<h2 class="title-2">Если вы хотите:</h2>
+			<ul class="list">
+				<li>Избавиться от звонков в отделения различных банков</li>
+				<li>Не посещать лично отделения банков в поисках лучших для Вас условий</li>
+				<li>Сэкономить время, нервы и деньги</li>
+				<li>Несколькими кликами обратиться сразу в <a href="#" class="link">56 банков</a></li>
+				<li>Найти банк, который предложет Вам лучшие условия</li>
+			</ul>
+
+			<h2 class="title-2">Просто:</h2>
+			<ol class="list list_count">
+				<li><span class="counter">1.</span>Анонимно заполните заявку</li>
+				<li><span class="counter">2.</span>Мгновенно получите предложения в ответ на Вашу заявку</li>
+				<li><span class="counter">3.</span>Отправьте свои контактные данные авторам лучших предложений для уточнения нюансов</li>
+				<li><span class="counter">4.</span>Если Вас всё устроит, отправляйтесь в отделение и получайте свой заказ!</li>
+			</ol>
+		</aside>
+		<!-- END .l-sidebar -->
+	</div>
+	<!-- END .page -->
+	<div class="push"></div>
+</div>
+<!-- END .out -->
+<!-- BEGIN .footer -->
+<footer class="footer">
+	<div class="footer__in">
+		<div class="footer__logo"><a href="#">Простобанк</a></div>
+		<div class="footer__counter"><a href="#"><img src="img/counter.png" alt="counter"></a></div>
+		<div class="footer__copyright">
+			<div class="footer__symbol"><a href="#">Простобанк Консалтинг</a></div>
+			<div class="footer__text">
+				<p><strong>Простобанк Консалтинг © 2006–2013</strong></p>
+				<p>Использование материалов сайта разрешено только при условии размещения ссылки на источник (гиперссылки для веб-сайтов). Любое копирование, перепечатывание, публикация или дальнейшее распространение материалов со ссылкой на агентство «Интерфакс-Украина» строго запрещается.</p>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- END .footer -->
+</body>
+</html>

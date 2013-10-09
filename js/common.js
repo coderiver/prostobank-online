@@ -15,7 +15,7 @@ if ($('.scroll').length > 0) {
 	});
 };
 
-//choice city
+//select
 function select() {
 	var el = $('.js-select');
 	var el_title = el.find('span');

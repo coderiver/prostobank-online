@@ -1,16 +1,16 @@
 // responsive example, edit or remove
-$break-small: 500px;
-$break-large: 1180px;
-@mixin respond-to($media) {
-	@if $media == pda {
-		// narrower than $width
-		@media only screen and (max-width: $break-small) { @content; }
-	}
-	@else if $media == wide {
-		// wider than $width
-		@media only screen and (min-width: $break-large) { @content; }
-	}
-}
+// $break-small: 500px;
+// $break-large: 1180px;
+// @mixin respond-to($media) {
+// 	@if $media == pda {
+// 		// narrower than $width
+// 		@media only screen and (max-width: $break-small) { @content; }
+// 	}
+// 	@else if $media == wide {
+// 		// wider than $width
+// 		@media only screen and (min-width: $break-large) { @content; }
+// 	}
+// }
 // retina bg
 @mixin retina{
 	@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
