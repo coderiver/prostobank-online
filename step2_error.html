@@ -50,7 +50,11 @@
 				</li>
 			</ul>
 			<div class="steps__content">
-				<section>
+				<div class="info-warning info-warning_error">
+					<i></i>
+					Для того, чтобы перейти к следующему шагу, введите или исправьте информацию в подсвеченных полях.
+				</div>
+				<section class="error">
 					<h2 class="title">Выберите один, несколько или все банки</h2>
 					<div class="steps__table scroll" style="max-height:475px">
 						<table>
@@ -361,14 +365,14 @@
 						<label>Ваши фамилия, имя и отчество</label>
 						<input type="text" class="input">
 					</fieldset>
-					<fieldset>
+					<fieldset class="error">
 						<label>Ваш номер телефона</label>
 						<input type="tel" id="phone" class="input" placeholder="+38 (___) ___-__-__">
 						<span class="help-inline">Введите правильно Ваш номер телефона</span>
 					</fieldset>
-					<fieldset>
+					<fieldset class="error">
 						<label>Ваша электронная почта</label>
-						<input type="email" class="input">
+						<input type="email" class="input" value="pupking.com">
 						<span class="help-inline">Введите правильно Вашу электронную почту</span>
 					</fieldset>
 					<fieldset>
@@ -376,7 +380,7 @@
 						<textarea class="textarea" rows="4"></textarea>
 						<span class="help-block">Например, удобное для Вас время, чтобы принять звонок</span>
 					</fieldset>
-					<fieldset>
+					<fieldset class="error">
 						<label class="checkbox">
 							<input type="checkbox" name="option2"><i></i> Я разрешаю обрабатывать мои персональные данные. <a href="#" class="link">Подробнее</a>
 							<span class="help-inline">Для того, чтобы подобрать Вам кредитную карту, необходимо разрешить обрабатывать Ваши персональные данные</span>
@@ -386,6 +390,10 @@
 				<div class="info-warning">
 					<i></i>
 					Помните, что Вы не обязаны покупать данную услугу даже после отправки заявки. Окончательное решение о покупке Вы можете принять после непосредственного общения с организациями.
+				</div>
+				<div class="info-warning info-warning_error">
+					<i></i>
+					Для того, чтобы перейти к следующему шагу, введите или исправьте информацию в подсвеченных полях.
 				</div>
 				<button class="button">Заказать кредитную карту</button>
 			</div>

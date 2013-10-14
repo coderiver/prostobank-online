@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+<g>
+	<g>
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="11.9995" y1="0" x2="11.9995" y2="24.0005">
+			<stop  offset="0" style="stop-color:#E6E7E8"/>
+			<stop  offset="0.5" style="stop-color:#BCBEC0"/>
+			<stop  offset="1" style="stop-color:#E6E7E8"/>
+		</linearGradient>
+		<circle fill="url(#SVGID_1_)" cx="12" cy="12.002" r="12"/>
+	</g>
+	<g>
+		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="11.9995" y1="4.0449" x2="11.9995" y2="19.9556">
+			<stop  offset="0" style="stop-color:#FC7474"/>
+			<stop  offset="0.4194" style="stop-color:#A21515"/>
+			<stop  offset="1" style="stop-color:#D51111"/>
+		</linearGradient>
+		<circle fill="url(#SVGID_2_)" cx="12" cy="12.002" r="7.955"/>
+	</g>
+	<g>
+		<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="11.9995" y1="0" x2="11.9995" y2="24.0005">
+			<stop  offset="0.3" style="stop-color:#BCBEC0"/>
+			<stop  offset="1" style="stop-color:#6D6E71"/>
+		</linearGradient>
+		<path fill="url(#SVGID_3_)" d="M12,1c6.066,0,11,4.936,11,11.002C23,18.066,18.065,23,12,23C5.935,23,1,18.066,1,12.002
+			C1,5.936,5.935,1,12,1 M12,0C5.373,0,0,5.373,0,12.002C0,18.629,5.373,24,12,24c6.627,0,12-5.371,12-11.998
+			C24,5.373,18.627,0,12,0L12,0z"/>
+	</g>
+	<g>
+		<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="11.9995" y1="4.0449" x2="11.9995" y2="19.9556">
+			<stop  offset="0" style="stop-color:#BC3939"/>
+			<stop  offset="1" style="stop-color:#810D0D"/>
+		</linearGradient>
+		<path fill="url(#SVGID_4_)" d="M12,5.045c3.835,0,6.956,3.121,6.956,6.957c0,3.834-3.12,6.953-6.956,6.953
+			c-3.835,0-6.955-3.119-6.955-6.953C5.045,8.166,8.165,5.045,12,5.045 M12,4.045c-4.393,0-7.955,3.563-7.955,7.957
+			c0,4.393,3.562,7.953,7.955,7.953c4.395,0,7.956-3.561,7.956-7.953C19.955,7.607,16.395,4.045,12,4.045L12,4.045z"/>
+	</g>
+</g>
+<g>
+	<rect x="7.5" y="10.936" fill="#FFFFFF" width="9" height="2.129"/>
+</g>
+</svg>
