@@ -13,14 +13,16 @@
 		@extend %clr
 		font-size: 0
 		li
+			position: relative
 			display: inline-block
-			width: 50%
+			width: 47%
 			height: 60px
 			padding: 10px
 			color: #777
 			line-height: 1.2
 			background: #e6e6e6
 			font-weight: bold
+			z-index: 1002
 			+box-sizing(border-box)
 			.stepes__nav-title
 				font-size: 18px
@@ -29,9 +31,32 @@
 			&.is-active
 				+background-image(linear-gradient(bottom, #f90 0%, #ffbd59 100%))
 				color: #000
+				.step__nav-arrow
+					background: url("../img/step-arrow-active.png")
 			+respond-to(tab-sm)
 				display: block
-				width: auto
+				width: 97%
+				padding: 10px
+			.step__nav-arrow
+				display: block
+				position: absolute
+				height: 100%
+				width: 22px
+				top: 0
+				right: -22px
+				z-index: 100
+				background: url("../img/step-arrow.png")
+				+background-size(100% 100%)
+		li+li
+			width: 53%
+			z-index: 1001
+			padding: 10px 10px 10px 55px
+			margin-left: -22px
+			+respond-to(tab-sm)
+				margin-left: 0
+				display: block
+				width: 97%
+				padding: 10px
 	.steps__content
 		margin-top: 1.5em
 		section

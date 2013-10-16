@@ -52,6 +52,9 @@
 				color: #009900
 				font-weight: bold
 .button
+	display: inline-block
+	text-decoration: none
+	position: relative
 	font-size: 18px
 	font-weight: bold
 	color: #fff
@@ -63,7 +66,17 @@
 	outline: 0
 	cursor: pointer
 	&:hover,&:active
-		+background-image(linear-gradient(bottom, #4eb549 0%, #026402 100%))
+		color: #fff 
+		// +background-image(linear-gradient(bottom, #4eb549 0%, #026402 100%))
+	i
+		position: absolute
+		top: 0
+		right: -15px
+		display: block
+		height: 100%
+		width: 15px
+		background: url('../img/btn-arrow.png')
+		+background-size(100% 100%)
 
 
 

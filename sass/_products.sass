@@ -8,9 +8,14 @@
 				margin-top: -15px
 			&:hover
 				background-color: #d9f0d9
+				.products__nav-arrow
+					display: block
 				.products__nav-text
 					color: #fff
-					+background-image(linear-gradient(bottom, #006400 0%, #009800 100%))
+					+background-image(linear-gradient(bottom, #026402 0%, #4eb549 100%))
+					i
+						background: url('../img/btn-arrow.png')
+						+background-size(100% 100%)
 			a
 				padding: 15px 15px 15px 0
 				display: block
@@ -22,16 +27,37 @@
 			float: left
 			width: 80px
 			text-align: center
+			margin-right: -80px
 			img
 				display: inline-block
 		.products__nav-text
-			overflow: hidden
+			position: relative
+			// overflow: hidden
+			margin-left: 80px
 			padding: 15px
 			+background-image(linear-gradient(bottom, #f90 0%, #ffbd59 100%))
 			font-size: 18px
 			font-weight: bold
 			line-height: 1
 			color: #000
+			i
+				position: absolute
+				top: 0
+				right: -15px
+				display: block
+				height: 100%
+				width: 15px
+				background: url('../img/btn-arrow-orange.png')
+				+background-size(100% 100%)
+		.products__nav-arrow
+			display: none
+			position: absolute
+			top: 0
+			right: -23px
+			height: 100%
+			width: 23px
+			background: url('../img/btn-arrow-green.png')
+			+background-size(100% 100%)
 	.products__service
 		.products__service-heading
 			@extend %clr
@@ -67,15 +93,32 @@
 				display: block
 		.products__service-list
 		.products__service-item
+			position: relative
 			margin-top: 1em
 			padding: 10px 15px 10px 0
 			&:hover
 				background: #d9f0d9
+				.products__service-item-arrow
+					display: block
+					+respond-to(mob)
+						display: none
 				.products__service-button
-					+background-image(linear-gradient(bottom, #006400 0%, #009800 100%))
+					font-weight: normal
+					+background-image(linear-gradient(bottom, #026402 0%, #4eb549 100%))
 					color: #fff
+					i
+						background: url(../img/btn-arrow.png)
 			+respond-to(mob)
 				padding: 10px 15px
+		.products__service-item-arrow
+			display: none
+			position: absolute
+			top: 0
+			right: -23px
+			height: 100%
+			width: 23px
+			background: url('../img/btn-arrow-green.png')
+			+background-size(100% 100%)
 		.products__service-content
 			overflow: hidden
 			@extend %clr
@@ -97,19 +140,26 @@
 				float: none
 				margin-right: 0
 		.products__service-button
-			float: right
+			position: absolute
+			top: 50%
+			margin-top: -25px
+			right: 10px
 			font-size: 18px
 			color: #000
 			text-decoration: none
 			width: 116px
-			height: 49px
-			line-height: 49px
+			height: 50px
+			line-height: 50px
 			text-align: center
 			padding: 0 5px
 			margin-left: -116px
+			font-weight: normal
 			+box-sizing(border-box)
 			+background-image(linear-gradient(bottom, #f90 0%, #ffbd59 100%))
+			i
+				background: url(../img/btn-arrow-orange.png)
 			+respond-to(mob)
+				position: relative
 				float: none
 				display: block
 				margin: 0 auto
