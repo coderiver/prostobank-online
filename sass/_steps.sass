@@ -71,9 +71,13 @@
 		label
 			display: block
 			font-size: 18px
-		.input, .textarea, .select, .select-wrap
+		.input, .textarea, .select-wrap
 			+respond-to(mob)
 				width: 100%
+				z-index: 4
+		.select
+			+respond-to(mob)
+				z-index: -1
 		.button
 			margin-top: 1em
 	.steps__done

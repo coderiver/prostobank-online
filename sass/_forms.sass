@@ -10,9 +10,14 @@
 	color: #000
 	outline: 0
 	+border-radius(0)
-	-webkit-appearance: none
 	+placeholder-color(#777)
 .select
+	width: 510px
+	position: relative
+	z-index: 2
+	-webkit-appearance: none
+	background-color: transparent
+	border: none
 	option
 		padding: 5px 10px
 .textarea
@@ -26,8 +31,13 @@
 	color: #000
 	resize: vertical
 .select-wrap
+	+box-sizing(border-box)
 	position: relative
 	display: inline-block
+	overflow: hidden
+	width: 485px
+	height: 35px
+	border: 1px solid #808080
 	&:before
 		position: absolute
 		top: 1px
