@@ -1,5 +1,18 @@
 $(document).ready(function() {
 
+
+	//popup
+	jQuery('.hero__media-in').click(function(event) {
+		jQuery('.popup').addClass('is-active');
+		jQuery('.overlay').addClass('is-active');
+		return false;
+	});
+	jQuery('.popup__close, .overlay').click(function(event) {
+		jQuery('.popup').removeClass('is-active');
+		jQuery('.overlay').removeClass('is-active');
+		return false;
+	});
+
 	//quickmenu
 	$('.quickmenu').click(function (e) {
 		$(this).toggleClass('is-active');
@@ -55,3 +68,35 @@ $(document).ready(function() {
 
 
 });
+
+
+
+
+
+
+
+
+//popup position
+$(function() {
+	var popupheight = $(".popup").height();
+	var popupwidth = $(".popup").width();
+	$(".popup").css("margin-top", -popupheight / 2);
+	$(".popup").css("margin-left", -popupwidth / 2);
+});
+
+$(window).resize(function() {
+	var popupheight = $(".popup").height();
+	var popupwidth = $(".popup").width();
+	$(".popup").css("margin-top", -popupheight / 2);
+	$(".popup").css("margin-left", -popupwidth / 2);
+});
+
+
+
+
+
+
+
+
+
+

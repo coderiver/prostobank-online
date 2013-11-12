@@ -18,6 +18,7 @@ $break-2: 768px;
 $break-3: 700px;
 $break-4: 600px;
 $break-5: 568px;
+$break-6: 490px;
 @mixin respond-to($media) {
   @if $media == land {
     @media only screen and (max-width: $break-1) { @content; }
@@ -33,5 +34,8 @@ $break-5: 568px;
   }
   @else if $media == mob {
     @media only screen and (max-width: $break-5) { @content; }
+  }
+  @else if $media == popup {
+    @media only screen and (max-height: $break-6) { @content; }
   }
 }
