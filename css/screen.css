@@ -187,6 +187,7 @@ a:hover { color: #0066b3; text-decoration: underline; }
 .steps .steps__content section { margin-bottom: 2em; }
 .steps .steps__content fieldset { margin-bottom: 1.5em; }
 .steps .steps__content label { display: block; font-size: 18px; }
+@media only screen and (max-width: 568px) { .steps .steps__content label { font-size: 18px; font-size: 4.8vw; } }
 @media only screen and (max-width: 568px) { .steps .steps__content .input, .steps .steps__content .textarea, .steps .steps__content .select { width: 100%; } }
 .steps .steps__content .button { margin-top: 1em; }
 .steps .steps__done { background-color: #d9f0d9; padding: 2% 5%; position: relative; }
