@@ -4,12 +4,17 @@
 		margin-bottom: 1.5em
 		.title
 			font-size: 40px
-			font-size: 8vw
 			margin-bottom: 0
+			+respond-to(mob)
+				font-size: 40px
+				font-size: 8.4vw
 		p
 			font-size: 32px
 			font-weight: bold
 			color: #000
+			+respond-to(mob)
+				font-size: 32px
+				font-size: 7.5vw
 	.stepes__nav
 		@extend %clr
 		font-size: 0
@@ -28,8 +33,14 @@
 			.stepes__nav-title
 				font-size: 18px
 				margin-bottom: 2px
+				+respond-to(mob)
+					font-size: 18px
+					font-size: 5vw
 			p
 				font-size: 14px
+				+respond-to(mob)
+					font-size: 14px
+					font-size: 4vw
 			&.is-active
 				+background-image(linear-gradient(bottom, #f90 0%, #ffbd59 100%))
 				color: #000
@@ -103,14 +114,25 @@
 			.radiobox
 				margin-right: 0
 				display: block !important
+				font-size: 16px
+				+respond-to(mob)
+					font-size: 16px
+					font-size: 4.8vw
 			.checkbox
 				margin-right: 0
 				padding-left: 0
+				font-size: 16px
+				+respond-to(mob)
+					font-size: 16px
+					font-size: 4.8vw
 			th,td
 				padding: 8px
 				text-align: left
 				vertical-align: top
 				font-size: 16px
+				+respond-to(mob)
+					font-size: 16px
+					font-size: 4.8vw
 				&:first-child
 					width: 20px
 				&.table__percent
@@ -130,6 +152,9 @@
 					font-size: 18px
 					color: #ed1c24
 					font-weight: bold
+					+respond-to(mob)
+						font-size: 18px
+						font-size: 4.8vw
 				&.table__list
 					line-height: 1
 					.icon
