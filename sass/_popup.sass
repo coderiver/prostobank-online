@@ -19,12 +19,15 @@
 	width: 80%
 	left: 50%
 	top: 50%
-	z-index: 1001
+	z-index: -1
+	opacity: 0
 	background-color: #dae3e7
 	+transform(translate3d(0,-700px,0))
 	+transition(all 300ms ceaser($easeInOutBack))
 	+transition(all .3s ease-in)
 	&.is-active
+		opacity: 1
+		z-index: 1001
 		+transform(translate3d(0,0,0))
 	.popup-i
 		position: relative
