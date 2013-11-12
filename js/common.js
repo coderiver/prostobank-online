@@ -11,7 +11,8 @@ $(document).ready(function() {
 		$('.scroll').jScrollPane({
 			showArrows: true,
 			verticalArrowPositions: 'split',
-			horizontalArrowPositions: 'split'
+			horizontalArrowPositions: 'split',
+			autoReinitialise: true
 		});
 	};
 
@@ -44,7 +45,7 @@ $(document).ready(function() {
 
 	//click document
 	$(document).click(function() {
-		$('.js-select').removeClass('is-open');	
+		$('.js-select').removeClass('is-open');
 	});
 
 	//masked input
