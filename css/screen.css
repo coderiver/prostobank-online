@@ -176,7 +176,7 @@ a:hover { color: #0066b3; text-decoration: underline; }
 .steps .stepes__nav li .stepes__nav-title { font-size: 18px; margin-bottom: 2px; }
 @media only screen and (max-width: 568px) { .steps .stepes__nav li .stepes__nav-title { font-size: 18px; font-size: 5vw; } }
 .steps .stepes__nav li p { font-size: 14px; }
-@media only screen and (max-width: 568px) { .steps .stepes__nav li p { font-size: 14px; font-size: 4vw; } }
+@media only screen and (max-width: 568px) { .steps .stepes__nav li p { font-size: 14px; font-size: 3.5vw; } }
 .steps .stepes__nav li.is-active { background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #ff9900), color-stop(100%, #ffbd59)); background-image: -webkit-linear-gradient(bottom, #ff9900 0%, #ffbd59 100%); background-image: -moz-linear-gradient(bottom, #ff9900 0%, #ffbd59 100%); background-image: -o-linear-gradient(bottom, #ff9900 0%, #ffbd59 100%); background-image: linear-gradient(bottom, #ff9900 0%, #ffbd59 100%); color: black; }
 .steps .stepes__nav li.is-active .step__nav-arrow { background: url("../img/step-arrow-active.png"); }
 @media only screen and (max-width: 700px) { .steps .stepes__nav li { display: block; width: 97%; padding: 10px; } }
