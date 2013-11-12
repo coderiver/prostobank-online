@@ -208,7 +208,7 @@ a:hover { color: #0066b3; text-decoration: underline; }
 @media only screen and (max-width: 700px) { .steps .steps__table table th.table__list, .steps .steps__table table td.table__list { width: 45%; } }
 .steps .steps__table table th { font-weight: bold; color: black; }
 .steps .steps__table table td { border-bottom: 1px solid #dfdfdf; }
-@media only screen and (max-width: 568px) { .steps .steps__table table td { font-size: 16px; font-size: 4vw; } }
+@media only screen and (max-width: 568px) { .steps .steps__table table td { font-size: 16px; font-size: 4vw !important; } }
 .steps .steps__table table td.table__percent { font-size: 18px; color: #ed1c24; font-weight: bold; }
 @media only screen and (max-width: 568px) { .steps .steps__table table td.table__percent { font-size: 18px; font-size: 4.8vw; } }
 .steps .steps__table table td.table__list { line-height: 1; }
