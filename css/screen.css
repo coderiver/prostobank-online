@@ -208,10 +208,11 @@ a:hover { color: #0066b3; text-decoration: underline; }
 @media only screen and (max-width: 700px) { .steps .steps__table table th.table__list, .steps .steps__table table td.table__list { width: 45%; } }
 .steps .steps__table table th { font-weight: bold; color: black; }
 .steps .steps__table table td { border-bottom: 1px solid #dfdfdf; }
+@media only screen and (max-width: 568px) { .steps .steps__table table td { font-size: 16px; font-size: 4vw; } }
 .steps .steps__table table td.table__percent { font-size: 18px; color: #ed1c24; font-weight: bold; }
 @media only screen and (max-width: 568px) { .steps .steps__table table td.table__percent { font-size: 18px; font-size: 4.8vw; } }
 .steps .steps__table table td.table__list { line-height: 1; }
-.steps .steps__table table td.table__list .icon { display: inline-block; vertical-align: top; margin-right: 5px; }
+.steps .steps__table table td.table__list .icon { display: inline-block; vertical-align: top; margin-right: 4px; }
 .steps .steps__table table ul { list-style-type: disc; margin-left: 20px; }
 .steps .steps__table table .table__rate { margin-top: 0.5em; font-size: 18px; color: #ed1c24; font-weight: bold; display: none; line-height: 1.2; }
 .steps .steps__table table .table__rate em { font-weight: normal; font-style: normal; font-size: 16px; color: black; }
