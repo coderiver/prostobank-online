@@ -1,0 +1,33 @@
+.media {
+  .media__list {
+    @extend %clr;
+    li {
+      display: inline-block;
+      width: 15%;
+      margin-left: 1%;
+      text-align: center;
+      &:first-child {
+        margin-left: 0;
+        text-align: left;
+      }
+      img {
+        display: inline-block;
+        max-width: 100%;
+      }
+      @include respond-to(tab) {
+        width: 25%;
+        margin-left: 2%;
+        margin-bottom: 20px;
+        &:first-child {
+          margin-left: 2%;
+          text-align: center;
+        }
+      }
+
+      @include respond-to(mob) {
+        width: 30%;
+        margin-left: 2%;
+      }
+    }
+  }
+}

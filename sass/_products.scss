@@ -1,0 +1,253 @@
+.products {
+  .products__nav {
+    .products__nav-list {}
+    .products__nav-item {
+      position: relative;
+      margin-top: 10px;
+      &:first-child {
+        margin-top: -15px;
+      }
+      &:hover {
+        background-color: #d9f0d9;
+        .products__nav-arrow {
+          display: block;
+        }
+        .products__nav-text {
+          color: white;
+          @include background-image(linear-gradient(bottom, #026402 0%, #4eb549 100%));
+          i {
+            background: url("../img/btn-arrow.png");
+            @include background-size(100% 100%);
+          }
+        }
+      }
+      a {
+        padding: 15px 15px 15px 0;
+        display: block;
+        color: black;
+        text-decoration: none;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+    .products__nav-image {
+      float: left;
+      width: 80px;
+      text-align: center;
+      margin-right: -80px;
+      img {
+        display: inline-block;
+      }
+    }
+    .products__nav-text {
+      position: relative;
+      // overflow: hidden
+      margin-left: 80px;
+      padding: 15px;
+      @include background-image(linear-gradient(bottom, #ff9900 0%, #ffbd59 100%));
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 1;
+      color: black;
+      i {
+        position: absolute;
+        top: 0;
+        right: -15px;
+        display: block;
+        height: 100%;
+        width: 15px;
+        background: url("../img/btn-arrow-orange.png");
+        @include background-size(100% 100%);
+      }
+    }
+    .products__nav-arrow {
+      display: none;
+      position: absolute;
+      top: 0;
+      right: -23px;
+      height: 100%;
+      width: 23px;
+      background: url("../img/btn-arrow-green.png");
+      @include background-size(100% 100%);
+    }
+  }
+  .products__service {
+    .products__service-heading {
+      @extend %clr;
+      padding-right: 35px;
+      @include respond-to(tab) {
+        padding-right: 0;
+      }
+
+      @include respond-to(tab-sm) {
+        padding-right: 0;
+        text-align: center;
+        .products__service-image {
+          float: none;
+          width: 100%;
+          display: block;
+        }
+      }
+    }
+    .products__service-image {
+      float: left;
+      width: 75px;
+      text-align: center;
+      img {
+        display: inline-block;
+      }
+      @include respond-to(mob) {
+        float: none;
+        width: 100%;
+        display: block;
+      }
+    }
+    .products__service-title {
+      overflow: hidden;
+      line-height: 1;
+      margin-bottom: 1em;
+    }
+    .title {
+      @include respond-to(tab-sm) {
+        overflow: hidden;
+        float: none !important;
+        width: 100% !important;
+        display: block;
+      }
+    }
+    .products__service-list {}
+    .products__service-item {
+      position: relative;
+      margin-top: 1em;
+      padding: 10px 15px 10px 0;
+      &:hover {
+        background: #d9f0d9;
+        .products__service-item-arrow {
+          display: block;
+          @include respond-to(mob) {
+            display: none;
+          }
+        }
+        .products__service-button {
+          font-weight: normal;
+          @include background-image(linear-gradient(bottom, #026402 0%, #4eb549 100%));
+          color: white;
+          i {
+            background: url(../img/btn-arrow.png);
+          }
+        }
+      }
+      @include respond-to(mob) {
+        padding: 10px 15px;
+      }
+    }
+    .products__service-item-arrow {
+      display: none;
+      position: absolute;
+      top: 0;
+      right: -23px;
+      height: 100%;
+      width: 23px;
+      background: url("../img/btn-arrow-green.png");
+      @include background-size(100% 100%);
+    }
+    .products__service-content {
+      overflow: hidden;
+      @extend %clr;
+      @include respond-to(mob) {
+        text-align: center;
+      }
+    }
+    .products__service-text {
+      float: left;
+      line-height: 1.2;
+      margin-right: 120px;
+      a {
+        font-size: 18px;
+      }
+      p {
+        font-size: 12px;
+        color: #777777;
+      }
+      .products__service-order {
+        font-size: 14px;
+        color: #009900;
+      }
+      @include respond-to(mob) {
+        float: none;
+        margin-right: 0;
+      }
+    }
+    .products__service-button {
+      position: absolute;
+      top: 50%;
+      margin-top: -25px;
+      right: 10px;
+      font-size: 18px;
+      color: black;
+      text-decoration: none;
+      width: 116px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      padding: 0 5px;
+      margin-left: -116px;
+      font-weight: normal;
+      @include box-sizing(border-box);
+      @include background-image(linear-gradient(bottom, #ff9900 0%, #ffbd59 100%));
+      i {
+        background: url(../img/btn-arrow-orange.png);
+      }
+      @include respond-to(mob) {
+        position: relative;
+        float: none;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.products__services {
+  @extend %clr;
+  .title {
+    font-size: 24px;
+    @include respond-to(tab) {
+      font-size: 20px;
+      font-size: 4vw;
+    }
+
+    @include respond-to(mob) {
+      font-size: 18px;
+      font-size: 4vw;
+    }
+  }
+  ul {
+    float: left;
+    width: 50%;
+    @include respond-to(tab-sm) {
+      float: none;
+      display: block;
+      width: 100%;
+    }
+  }
+  li {
+    position: relative;
+    line-height: 1;
+    margin-bottom: 1.5em;
+    min-height: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    a {
+      display: inline-block;
+      padding-left: 75px;
+      i {
+        width: 70px;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+}

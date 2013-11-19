@@ -1,0 +1,26 @@
+// default layout
+
+.layout {
+  width: 100%;
+  display: block;
+  @extend %clr;
+  .l-main {
+    float: left;
+    // margin-right: 330px
+    width: 64%;
+    @include respond-to(wide) {
+      // margin-right: 0
+      float: none;
+      display: block;
+      width: auto;
+    }
+  }
+  .l-sidebar {
+    float: right;
+    width: 300px;
+    margin-left: -300px;
+    @include respond-to(wide) {
+      display: none;
+    }
+  }
+}

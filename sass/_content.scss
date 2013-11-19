@@ -1,0 +1,12 @@
+.content {
+  font-size: 16px;
+  line-height: 1.2;
+  section {
+    margin-bottom: 50px;
+    @include respond-to(mob) {
+      margin-bottom: 1.5em;
+    }
+  }
+  p {}
+  margin-bottom: 0.5em;
+}

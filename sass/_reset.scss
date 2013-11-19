@@ -7,7 +7,7 @@
 // ### animation example
 //     @include keyframes(rotate) {
 //        from {
-//           @include rotate(0); 
+//           @include rotate(0);
 //        }
 //        to {
 //           @include rotate(360);
@@ -36,57 +36,70 @@
 //     }
 // BTW these comments will not render into css
 
-
 // *
 // 	-webkit-transition: .3s all
 
-*
-	margin: 0
-	padding: 0
+* {
+  margin: 0;
+  padding: 0;
+}
 
-+iphone
-	*
-		-webkit-text-size-adjust: none
+@include iphone {
+  * {
+    -webkit-text-size-adjust: none;
+  }
+}
 
-button::-moz-focus-inner
-	padding: 0
-	border: 0
 
-input[type="submit"]::-moz-focus-inner
-	padding: 0
-	border: 0
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
 
-html,body
-	height: 100%
+input[type="submit"]::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
 
-body
-	font:
-		family: Arial,sans-serif
-		weight: normal
-		size: 14px
-	line-height: 1.4
+html,body {
+  height: 100%;
+}
+
+body {
+  font: {
+    family: Arial, sans-serif;
+    weight: normal;
+    size: 14px;
+  };
+  line-height: 1.4;
+}
 
 // resets
-a img,fieldset
-	border: none
+a img,fieldset {
+  border: none;
+}
 
 // reset type list
-ul
-	list-style: none
+ul {
+  list-style: none;
+}
 
 // clearfix
-.clearfix:after
-	display: block
-	visibility: hidden
-	clear: both
-	height: 0
-	content: ''
-	font-size: 0
-	line-height: 0
+.clearfix:after {
+  display: block;
+  visibility: hidden;
+  clear: both;
+  height: 0;
+  content: "";
+  font-size: 0;
+  line-height: 0;
+}
 
-a
-	color: #0066b3
-	text-decoration: underline
-	&:hover
-		color: #0066b3
-		text-decoration: underline
+a {
+  color: #0066b3;
+  text-decoration: underline;
+  &:hover {
+    color: #0066b3;
+    text-decoration: underline;
+  }
+}

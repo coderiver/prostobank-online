@@ -1,0 +1,16 @@
+%inside {
+  position: relative;
+  max-width: 1024px;
+  // min-width: 568px
+  padding: 0 20px;
+  @include box-sizing(border-box);
+  margin: 0 auto;
+}
+
+.page {
+  @extend %inside;
+  margin: 55px auto 180px;
+  p {
+    margin-bottom: 0.5em;
+  }
+}

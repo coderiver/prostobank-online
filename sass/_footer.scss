@@ -1,0 +1,94 @@
+// main wrapper and important element of the sticky footer
+.out {
+  min-width: 320px;
+  min-height: 100%;
+  overflow: hidden;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -75px;
+}
+
+// sticky footer
+.push {
+  height: 75px;
+}
+
+.footer {
+  min-height: 75px;
+  min-width: 320px;
+  background: #dae2e7;
+  border: 1px solid #b0bfcd;
+  border-width: 1px 0 0;
+  @include box-shadow(0px -3px 4px rgba(#e7e7e7, 0.5));
+  padding: 10px 0;
+  @include box-sizing(border-box);
+  .footer__in {
+    @extend %inside;
+    @extend %clr;
+  }
+  .footer__logo {
+    float: left;
+    padding-top: 7px;
+    margin-right: 17px;
+    @include respond-to(tab) {
+      float: none;
+      text-align: center;
+      padding-top: 10px;
+    }
+
+    a {
+      display: inline-block;
+      vertical-align: top;
+      @extend %hide-text;
+      // +s(logo-small)
+      @include svg(logo, 131, 37);
+    }
+  }
+  .footer__counter {
+    float: left;
+    padding-top: 17px;
+    margin-right: 18px;
+    @include respond-to(tab) {
+      float: none;
+      text-align: center;
+      padding-top: 21px;
+    }
+
+    a {
+      display: inline-block;
+      vertical-align: top;
+    }
+    img {
+      display: block;
+    }
+  }
+  .footer__copyright {
+    overflow: hidden;
+    @include respond-to(tab) {
+      padding-top: 15px;
+    }
+
+    .footer__symbol {
+      float: left;
+      margin: 2px 8px 0 0;
+      a {
+        display: inline-block;
+        vertical-align: top;
+        @extend %hide-text;
+        // +s(consult-symbol)
+        @include svg(logo-consulting, 59, 50);
+      }
+    }
+    .footer__text {
+      overflow: hidden;
+      line-height: 1.2;
+      font-size: 11px;
+      strong {
+        font-size: 12px;
+        @include respond-to(tab-sm) {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+}
